@@ -1,9 +1,14 @@
 #include <stdio.h>
 int main() {
-   printf("Even numbers from 0 to 10:\n");
-   for (int x = 0; x <= 10; x++) {
-       if (x % 2 == 0)
-           printf("%d ", x);
+   printf("✨ Even Number Symphony ✨\n");
+    for (int i = 0; i <= 5; i++) {
+       int even = i << 1;
+       printf("🎭 %d", even);
+       for (int j = 0; j <= even; j += 2) {
+           printf("♡");
+       }
+       printf("\n");
    }
+   printf("\n🌈 Even Magic Complete! 🌈\n");
    return 0;
 }
