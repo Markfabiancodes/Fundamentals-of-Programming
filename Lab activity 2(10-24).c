@@ -7,7 +7,6 @@ int main() {
         int even = i << 1;
         printf("%d", even);
         for (int j = 0; j <= even; j += 2) {
-            printf("~");
         }
         printf("\n");
     }
@@ -15,3 +14,4 @@ int main() {
     printf("\nEven Magic Complete!\n");
     return 0;
 }
+
