@@ -10,7 +10,6 @@ int main() {
     for (int i = 1; i <= 10; i++) {
         printf("%d × %d = %d", num, i, num * i);
         for (int j = 0; j < i; j++) {
-            printf("~");
         }
         printf("\n");
     }
@@ -18,4 +17,5 @@ int main() {
     printf("\nCalculation Complete!\n");
     return 0;
 }
+
 
