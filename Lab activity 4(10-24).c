@@ -1,22 +1,23 @@
 #include <stdio.h>
-#include <math.h>
+
 int main() {
-   printf("Exponential Symphony: 2^n Series\n");
-   printf("══════════════════════════════════\n\n");
-   printf("┌───────┬───────┬───────────────┐\n");
-   printf("│ Power │ Value │   Equation    │\n");
-   printf("├───────┼───────┼───────────────┤\n");
-   for (int n = 0; n <= 9; n++) {
-       int result = (int)pow(2, n);
-       printf("│ 2^%-3d │ %-5d │ ", n, result);
-       // Visual representation
-       for (int i = 0; i < n; i++) {
-           printf("2");
-           if (i < n - 1) printf("×");
-       }
-       if (n == 0) printf("1");
-       printf("%*s│\n", 13 - (n * 2), "");
-   }
-   printf("└───────┴───────┴───────────────┘\n");
-   return 0;
+    int power = 1;
+
+    printf("====================================\n");
+    printf("       Powers of 2 up to 512        \n");
+    printf("====================================\n\n");
+
+    printf("Exponent | Value\n");
+    printf("-----------------\n");
+
+    for (int i = 0; power <= 512; i++) {
+        printf("   2^%-2d | %3d\n", i, power);
+        power *= 2;
+    }
+
+    printf("\n====================================\n");
+    printf("      End of Power Calculation      \n");
+    printf("====================================\n");
+
+    return 0;
 }
