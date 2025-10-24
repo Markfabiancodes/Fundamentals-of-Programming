@@ -7,7 +7,7 @@ int main() {
         int value = (i << 3) + (i << 1);
         printf("%3d", value);
         for (int j = 0; j < i; j++) {
-            printf("->");
+            printf("~");
         }
         printf("\n");
     }
@@ -15,3 +15,4 @@ int main() {
     printf("\nBinary Magic Complete!\n");
     return 0;
 }
+
