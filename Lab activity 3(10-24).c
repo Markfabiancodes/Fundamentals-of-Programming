@@ -7,7 +7,6 @@ int main() {
         int odd = (i << 1) + 1;
         printf("%d", odd);
         for (int j = 0; j <= odd; j += 2) {
-            printf("~");
         }
         printf("\n");
     }
@@ -15,4 +14,5 @@ int main() {
     printf("\nOdd Magic Complete!\n");
     return 0;
 }
+
 
