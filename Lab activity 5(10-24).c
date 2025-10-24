@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main() {
@@ -8,7 +9,7 @@ int main() {
     printf("\nMultiplication Table of %d:\n", num);
 
     for (int i = 1; i <= 10; i++) {
-        printf("%d × %d = %d", num, i, num * i);
+        printf("%d TIMES %d = %d!", num, i, num * i);
         for (int j = 0; j < i; j++) {
         }
         printf("\n");
